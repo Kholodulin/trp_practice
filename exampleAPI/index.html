@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exampleAPI</title>
+</head>
+<body>
+    <h1>Курсы криптовалют</h1>
+    <ul id="crypto-list">
+    </ul>
+
+    <script>
+        const apiKey = 'CG-dhrYxnvsh7uVw14ynXNx2aRx';
+        const apiUrl = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,matic-network,dogecoin,solana&vs_currencies=usd';
+        function updateCryptoList(cryptoData) {
+            const cryptoListElement = document.getElementById('crypto-list');
+
+            for (const [cryptoName, cryptoInfo] of Object.entries(cryptoData)) {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${cryptoName}: $${cryptoInfo.usd}`;
+                cryptoListElement.appendChild(listItem);
+            }
+        }
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => updateCryptoList(data))
+            .catch(error => console.error('Ошибка при запросе к CoinGecko API:', error));
+    </script>
+</body>
+</html>
