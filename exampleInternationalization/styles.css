@@ -1,0 +1,45 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+#content {
+    text-align: center;
+    margin: 50px;
+}
+
+#info1, #info2 {
+    text-align: left;
+    margin: 40px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.additional-content {
+    margin-top: 20px;
+}
+
+/* Стили для светлой темы */
+.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme button {
+    background-color: #eeeeee;
+}
+
+/* Стили для темной темы */
+.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-theme button {
+    background-color: #9f49c1;
+}
