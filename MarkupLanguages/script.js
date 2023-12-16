@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    // Загрузка данных из XML
     $.ajax({
         type: "GET",
         url: "recipe.xml",
@@ -26,7 +25,6 @@ $(document).ready(function() {
         }
     });
 
-    // Загрузка данных из JSON
     $.getJSON("recipe.json", function(data) {
         $.each(data.recipes, function(index, recipe) {
             var title = recipe.title;
