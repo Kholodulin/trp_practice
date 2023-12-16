@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+    <recipe>
+        <title>Паста карбонара</title>
+        <ingredients>
+            <ingredient>Спагетти</ingredient>
+            <ingredient>Бекон</ingredient>
+            <ingredient>Яйца</ingredient>
+            <!-- Добавьте другие ингредиенты по необходимости -->
+        </ingredients>
+        <instructions>
+            <step>1. Вскипятите воду и сварите спагетти.</step>
+            <step>2. Обжарьте бекон до золотистой корки.</step>
+            <step>3. Смешайте яйца и добавьте вареные спагетти и обжаренный бекон.</step>
+            <!-- Добавьте другие шаги по необходимости -->
+        </instructions>
+    </recipe>
+    <!-- Добавьте другие рецепты по необходимости -->
+</recipes>
